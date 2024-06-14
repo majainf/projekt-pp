@@ -1,0 +1,14 @@
+#fromCsvContainer {
+  /* display: none; */
+}
+#fromSquareFunctionContainer {
+  display: none;
+}
+#invalidInputFile {
+  display: none;
+  color: red;
+}
+#chart {
+  width: 100%;
+  max-width: 600px;
+}

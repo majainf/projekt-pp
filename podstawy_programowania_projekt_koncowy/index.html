@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekt PP - Wizualizacja danych</title>
+    <link rel="stylesheet" href="style.css"></link>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>    
+    <script src="main.js"></script>    
+    <div>
+      <!-- <button onclick="fromCsv()">From CSV</button> -->
+      <!-- <button onclick="fromSquareFunction()">Square Function</button> -->
+    </div>
+    <div id="fromCsvContainer">
+        <h3>Wrzuć plik CSV zawierający dane:</h3>
+        <input id="csvFile" type="file" accept=".csv" onchange="readCsv(event.target.files[0])">
+        <h4 id="invalidInputFile">Niewłaściwy plik</h4>
+        <canvas id="chart"></canvas>
+    </div>
+    <div id="fromSquareFunctionContainer">
+      f(x) = <input>
+    </div>
+  </body>
+</html>
